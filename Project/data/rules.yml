@@ -1,0 +1,60 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Execute action on button click
+  steps:
+      - intent: inform_button_clicked
+      - action: action_handle_button
+
+- rule: Execute action on button click contanct info
+  steps:
+      - intent: buttons_contact_info
+      - action: action_handle_button_contactinfo
+
+- rule: Give action for energyLab
+  steps:
+     - intent: Button Direction for EnergyLab
+     - action: action_send_energieLab_Pics
+
+- rule: Give action for InfoLab
+  steps:
+     - intent: Button Direction for InfoLab
+     - action: action_send_infoLab_Pics
+
+- rule: Give action for CEL
+  steps:
+     - intent: Button Direction for Cel
+     - action: action_send_celLab_Pics
+
+- rule: Give action for TelecomLab
+  steps:
+     - intent: Button Direction for Telecom
+     - action: action_send_telecomLab_Pics
+
+- rule: Give action for Admin
+  steps:
+     - intent: Button Direction for Admin
+     - action: action_send_admin_Pics
+
+- rule: Give action for Lok 23
+  steps:
+     - intent: Button Direction for Lok23
+     - action: action_send_Lok23_Pics
+
+- rule: Give action for Geb16
+  steps:
+     - intent: Button to find Geb 16
+     - action: action_send_Geb16_Pics
+
+

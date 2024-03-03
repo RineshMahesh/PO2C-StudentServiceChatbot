@@ -1,0 +1,1216 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - Hoe gaat het?
+    - Hallo
+    - Hoi
+    - Goedendag
+    - Hey
+    - Goeiedag
+    - Hoihoi
+    - Yo
+    - wassup
+    - Hoe is het? 
+
+- intent: greet_goodmorning
+  examples: |
+      - Goedemorgen
+      - Goeiemorgen
+      - morgen 
+      - goedemorgn
+      - morning
+      - goedemorgen hoe is het? 
+      - hallo, goedemorgen hoe is het
+      - hallo goedemorgen
+      - heyy goedemorgen
+      - hoiii goedemorgen
+      - hallo goedemorgen, hoe gaat het
+      - goedemorgen, hoe gaat het
+      - goedemorgen hoe is het
+      - goedemorgen hoe is het? 
+      - hallo, goeiemorgen hoe is het
+      - hallo, goeiemorgen 
+      - heyy, goeiemorgen 
+      - hoiii, goeiemorgen 
+      - goeiemorgen , hoe gaat het
+      - goeiemorgen, hoe is het
+      - goedemorgen, ik heb een vraag
+      - goeiemorgen, ik heb een vraag
+      - goedemorgen, kan je me helpen met iets 
+      
+
+- intent: greet_goodafternoon
+  examples: |
+      - Goedemiddag
+      - middag 
+      - Goeiemiddag
+      - goeiemiddg
+      - goedemiddag hoe is het? 
+      - hallo, goedemiddag hoe is het
+      - hallo goedemiddag
+      - heyy goedemiddag
+      - hoiii goedemiddag
+      - hallo , goedemiddag hoe gaat het
+      - goedemiddag, hoe gaat het
+      - goedemiddag hoe is het
+      - goedemiddag hoe is het? 
+      - hallo goeiemiddag, hoe is het 
+      - hallo, goeiemiddag
+      - heyy, goeiemiddag
+      - hoiii, goeiemiddag
+      - goeiemiddag , hoe gaat het
+      - goeiemiddag, hoe is het
+      - goeiemiddag, ik heb een vraag
+      - goedemiddag, ik heb een vraag
+      - goeiemiddag, kan je me helpen met iets
+     
+      
+
+- intent: greet_goodnight
+  examples: |
+      - goedeavond
+      - avond
+      - goeieavond
+      - goedeavond hoe is het? 
+      - hallo,goedeavond hoe is het
+      - hallo goedeavond
+      - heyy goedeavond
+      - hoiii goedeavond
+      - hallo goedeavond, hoe gaat het
+      - goedeavond, hoe gaat het
+      - goedeavond hoe is het
+      - goedeavond hoe is het? 
+      - hallo goeieavond, hoe is het?
+      - hallo, goeieavond
+      - heyy, goeieavond
+      - hoiii, goeieavond
+      - goeieavond, hoe gaat het
+      - goeieavond, hoe is het
+      - goeieavond, ik heb een vraag
+      - goedeavond, ik heb een vraag
+      - goeieavond, kan je me helpen met iets
+
+
+- intent: goodbye
+  examples: |
+    - doei
+    - later 
+    - ik ga weg 
+    - tot ziens
+    - dag
+    - fijne dag verder
+    - ik moet gaan 
+    - tot later
+    - tot de volgende keer
+    - ik ga ervan door
+    - ik ga nu offline
+    - ik verlaat de chat nu 
+    - ik stop de conversatie nu 
+
+- intent: bot_challenge
+  examples: |
+    - Ben jij een bot?
+    - Ben jij een mens?
+    - Spreek ik met een bot?
+    - Spreek ik met een mens?
+    - Ben jij een robot?
+    - Ben jij een echt persoon?
+    - Ben jij chatGPT?
+    - Wat ben je? 
+    - Wie ben je? 
+    - Wie is je eigenaar? 
+    - wie is je baas? 
+    - ben je van adek?
+    - Ben je van Anton De Kom Universiteit? 
+    - Wat voor soort chatbot ben je? 
+    - Wat kan jij allemaal doen? 
+    - Wat is je capaciteit? 
+    - Wat ben je? 
+    - Door wie ben je gecode?
+    - Door wie ben je geprogrammeerd? 
+    - Ben je een AI?
+    - Wat is je naam? 
+    - Je naam? 
+    - Hoe heet je? 
+    - Vertel over jezelf? 
+    - Ben je gratis? 
+    - praat ik met een mens 
+    - ben je ai?
+    - ben je een man
+    - ben je een vrouw 
+
+- intent: Ask Location Of Adek
+  examples: |
+    - Wat is het adres van de Anton de Kom Universiteit?
+    - adres van Anton de Kom Universiteit? 
+    - Kun je me het adres van Adek geven?
+    - adres van adek
+    - adres van adeKUS
+    - Waar bevindt de Anton de Kom Universiteit zich?
+    - Kun je me vertellen waar Adek is gevestigd?
+    - Kun je me vertellen waar Anton de Kom Universiteit is gevestigd?
+    - waar is adek?
+    - waar is adeKUS
+    - waar is Anton de Kom Universiteit? 
+    - Geef me adres van Anton de Kom Universiteit
+    - geef me adres van adek
+    - Is adek aan de leysweg? 
+    - is adeKUS aan de leysweg
+    - Is de Anton de Kom compplex aan de leysweg? 
+    - Is adek gevestigd aan de leysweg?
+    - Wat is de locatie van adeKUS
+
+- intent: Ask About Adek
+  examples: |
+    - Wat is de Anton de Kom Universiteit?
+    - Kun je me meer vertellen over Adek?
+    - Vertel me over adeKUS
+    - Wat kan ik vinden op de Anton de Kom Universiteit?
+    - Kun je me informatie geven over de Anton de Kom Universiteit?
+    - Kun je me vertellen wat er te doen is op de Anton de Kom Universiteit?
+    - Vertel me over Adek
+    - Wat is geschiedenis van Anton De Kom universiteit
+    - Waarvoor staat adeKUS?
+    - geef me informatie over adek
+    - geef me informatie over adekus 
+    - wat is adek
+    - beshrijf adekus voor me
+    - beschrijf adek voor me
+    
+    
+    
+    
+
+
+- intent: What to study
+  examples: |
+    - Wat zijn de studiemogelijkheden op de Anton de Kom Universiteit?
+    - Wat zijn de studiemogelijkheden op de Anton de Kom Universiteit adeKUS?
+    - Wat kan ik studeren op Adek
+    - wat kan ik studeren op adeKUS?
+    - Wat kan ik studeren op Anton de Kom universiteit?
+    - Wat zijn de faciliteiten van de Anton de Kom Universiteit?
+
+
+- intent: DirectorOfAdek
+  examples: |
+    - Wie is de voorzitter bij de Adek?
+    - Wie is de voorzitter bij Anton de kom universiteit
+    - Wie is de voorzitter van adeKUS? 
+    - Is Shanti Venetiaan de voorzitter van Adek? 
+    - Is Shanti Venetiaan de voorzitter van AdeKUS? 
+    - Is Shanti Venetiaan de voorzitter van Anton de kom universiteit?
+    - Voorzitter van adek? 
+    - Voorzitter van AdeKus? 
+    - wie is de hoofd van adek
+    - noem de voorzitter van adek op
+ 
+
+- intent: inform_affirm
+  examples: |
+    - Ja
+    - Zeker
+    - Graag
+    - Jawel
+    - Ok
+    - Okey 
+    - Het kan 
+
+
+- intent: deny
+  examples: |
+    - nee
+    - hoeft niet
+    - laat het 
+    - Ik hoef het niet te zien
+    - nee het hoeft niet
+    - nee laat het
+    - Nee, dank je wel.
+    - Ik sla deze over.
+    - Geen interesse, bedankt.
+    - Nee, toch niet.
+    - Niet voor mij.
+    - Laat maar zitten.
+    - Ik hoef het niet.
+    - Geen behoefte aan.
+    - Nee, liever niet.
+    - Dank je, maar nee
+
+- intent: Studentspace Questions
+  examples: |
+    - Wat is de link van moodle? 
+    - Hoe ga ik naar moodle? 
+    - Hoe ga ik naar studentspace? 
+    - Wat is studentspace? 
+    - Wat is moodle? 
+    - Wat zijn de functies van moodle? 
+    - functies van studentspace 
+
+
+
+- intent: Not Happy with Answer
+  examples: |
+    - Nee ik wilde dat niet weten
+    - Dat is niet wat ik wilde weten
+    - Dit is niet wat ik bedoelde
+    - Kun je me weer opnieuw helpen
+    - Ik had gehoopt op een ander antwoord
+    - Sorry, maar ik denk niet dat je mijn vraag begrijpt
+    - Dit wilde ik niet weten 
+
+- intent: inform_button_clicked
+  examples: |
+    - /link_bachelor_opleidingen
+    - /link_master_opleidingen
+
+
+- intent: RC van ET
+  examples: |
+    - Wie is de rc van elektrotechniek? 
+    - Wie is de richtings coordinator van elektrotechniek? 
+    - Wie is de rc van ET? 
+    - De rc van ET
+    - De van richtings coordinator Elektrotechniek
+    - Wie is Anand Rampadarath?
+    - wie is Amrita Raghoebarsing?
+    - Wie is de waarnemend rc van elektrotechniek? 
+    - Wie is de waarnemend richtings coordinator van elektrotechniek? 
+    - Wie is de waarnemend rc van ET? 
+    - De rc van waarnemend ET
+    - De van waarnemend richtings coordinator Elektrotechniek?
+    - Hoe vindt ik de rc van ET? 
+    - Hoe contact ik de rc van Elektrotechniek?
+    - Hoe vindt ik de richtings coordinator van ET? 
+    - Wat is de mail van de rc? 
+    - Wat is de Email adress van de rc? 
+    - Mail van richtings coordinator? 
+    - Wat is de mail van Anand Rampadarath?
+    - wat is de Email adress van Anand Rampadarath?
+    - wat is de mail van Amrita Raghoebarsing?
+    - wat is de Email adress van Amrita Raghoebarsing?
+
+
+- intent: ask_accreditation_et
+  examples: |
+    - Is de opleiding Bachelor Elektrotechniek geaccrediteerd?
+    - Wanneer is de opleiding Bachelor Elektrotechniek geaccrediteerd?
+    - Heeft de opleiding Bachelor Elektrotechniek accreditatie?
+    - Wat is de accreditatiestatus van de opleiding Bachelor Elektrotechniek?
+    - Is de opleiding Bachelor Elektrotechniek erkend?
+    - Is de opleiding Bachelor Elektrotechniek goedgekeurd?
+    - Heeft de opleiding Bachelor Elektrotechniek een accreditatiecertificaat?
+    - Wie heeft de accreditatie van de opleiding Bachelor Elektrotechniek uitgevoerd?
+    - Wat zijn de accreditatiestandaarden voor de opleiding Bachelor Elektrotechniek?
+    - Wat is de accreditatiekader van de opleiding Bachelor Elektrotechniek?
+    - Welke organisatie heeft de opleiding Bachelor Elektrotechniek geaccrediteerd?
+    - Wanneer heeft de opleiding Bachelor Elektrotechniek de accreditatie ontvangen?
+    - Is elektrotechniek geaccrediteerd?
+    - Is elektro geaccrediteerd?
+    - is ET geaccrediteerd?
+    - Wanneer is Elektro geaccretideerd?
+    
+
+- intent: ask_ftew_origin
+  examples: |
+    - Wanneer is de Faculteit der Technologische Wetenschappen opgericht?
+    - Wat is de geschiedenis van de Faculteit der Technologische Wetenschappen?
+    - Hoe is de Faculteit der Technologische Wetenschappen ontstaan?
+    - Wanneer is de Faculteit der Natuurtechnische Wetenschappen opgericht?
+    - Wanneer is de Faculteit der Technische Wetenschappen opgericht?
+    - Wat is de geschiedenis van de Faculteit der Natuurtechnische Wetenschappen?
+    - Wat is de geschiedenis van de Faculteit der Technische Wetenschappen?
+    - Wanneer is de Faculteit der Technologische Wetenschappen samengevoegd?
+    - Wanneer is de Faculteit der Natuurtechnische Wetenschappen samengevoegd?
+    - Wanneer is de Faculteit der Technische Wetenschappen samengevoegd?
+    - Wanneer is FteW opgericht
+    - sinds wanneer bestaat ftew
+    - hoelang bestaat ftew al?
+    - wat is de geschiedenis van ftew
+
+
+- intent: ask_ftew_tasks
+  examples: |
+    - Wat zijn de taken van de Faculteit der Technologische Wetenschappen?
+    - Wat is de taak van de Faculteit der Technologische Wetenschappen?
+    - wat voor taken heeft ftew
+    - wat doet ftew
+    - noem de taken van ftew op
+
+- intent: ask_ftew_study_directions
+  examples: |
+    - Wat zijn de studierichtingen van de FTeW?
+    - Welke studierichtingen heeft de FTeW?
+    - Welke opleidingen biedt de FTeW aan?
+    - Welke studierichtingen kan ik volgen bij de FTeW?
+    - Wat zijn de richtingen van de FTeW?
+
+- intent: ask_faculty_board_composition
+  examples: |
+    - Uit wie bestaat het faculteitsbestuur?
+    - Wie zitten er in het faculteitsbestuur?
+    - Wie zijn de leden van het faculteitsbestuur?
+    - Wat is de samenstelling van het faculteitsbestuur?
+    - Wat is de functie van de faculteitsbestuur
+    - wat kan je me vertellen over de faculteitsbestuur
+    - noem de leden op van de faculteitsbestuur
+    - wie zit in het faculteitsbestuur
+    - wat doet het faculteitsbestuur
+    
+
+
+- intent: ask_exam_committee
+  examples: |
+    - Wat is de examencommissie?
+    - Wat zijn de taken van de examencommissie?
+    - Vertel me over de examencommissie
+    - wat doet de examencommissie
+    - taken van de examencommissie
+    - leg me over de examemcommissie uit
+    - hoe werkt de examencommisie
+    - wat is de functie van de examencommissie
+    
+   
+
+- intent: ask_exam_committee_members
+  examples: |
+    - Wie zijn allemaal lid van de examencommissie?
+    - Welke personen maken deel uit van de examencommissie?
+    - wie is in de examencommissie? 
+    - Welke personen zitten in de examencommissie?
+    - Wie zijn de leden van de examencommissie?
+    - wie maakt deel uit van de examencommissie
+    - noem de leden op van de examencommissie
+    - wie zit in de examemcommsie
+    - wie maakt deel uit van de examencommissie
+    
+    
+
+- intent: ask_exam_committee_contact
+  examples: |
+    - Hoe kan ik de examencommissie bereiken?
+    - Wat is het contactadres van de examencommissie?
+    - Hoe kom ik in contact met de examencommissie?
+    - contact gegevens van het examencommissie
+    - hoe bereik ik de examencommissie
+    - waar is de examencommissie
+    - geef me contact gegevens van de examencommissie
+
+
+- intent: ask_Opleiding_committee
+  examples: |
+    - Wat is de opleidingscommissie?
+    - Wie zit er in de opleidingscommissie?
+    - Wat zijn de taken van de opleidingscommissie?
+    - wat is de functie van de opleidingscommissie
+    - noem de leden op van de opleidingscommissie
+    - wie is in de opleidingscommissie
+    - vertel me over de opleidingscommissie
+    - taken van de opleidingscommissie
+
+
+- intent: ask_student_committee
+  examples: |
+    - Wat is de studentencommissie?
+    - Wat zijn de taken van de studentencommissie?
+    - Vertel me over de studentencommissie
+    - heb je informatie over de studentencommissie
+    - wat is de functie van de studentencommissie
+    
+  
+
+- intent: ask_student_committee_members
+  examples: |
+     - Wie zijn de leden van de studentencommissie?
+     - Welke studenten maken deel uit van de studentencommissie?
+     - Wie behoren tot de leden van de studentencommissie?
+     - Welke studenten zitten in de studentencommissie?
+  
+    
+     
+
+- intent: ask_faculty_office
+  examples: |
+    - Wat is het faculteitsbureau?
+    - Wat doet het faculteitsbureau?
+    - Wat zijn de taken van het faculteitsbureau?
+
+- intent: ask_faculty_office_location
+  examples: |   
+    - Waar is de faculteitsbureau?
+    - Hoe vindt k de  faculteitsbureau
+    - geef me de locatie van de  faculteitsbureau
+    - hoe kom ik in contact met de faculteitsbureau
+    - geef me de contact gegevens van de faculteitsbureau
+
+
+- intent: ask_student_dean
+  examples: |
+    - Wat is de rol van de studentendecaan?
+    - Wie is de studentendecaan?
+    - Wat doet de studentendecaan?
+    - vertel me over de studentendecaan?
+
+- intent: ask_student_dean_contact
+  examples: |
+    - De nummer van de studentendecaan? 
+    - contact gegevens van de studendendecaan
+    - hoe bereik ik de studentendecaan
+    - hoe kom ik in contact met de studentendecaan
+    - de mail van de studentendecaan
+
+- intent: ask_quality_officer
+  examples: |
+    - Wat is de afdeling Kwaliteitszorg?
+    - Wie is de kwaliteitsmedewerker?
+    - Wat doet de kwaliteitsmedewerker?
+    - wat is de taak van de kwaliteitsmedewerker
+    - wat is de functie van de kwaliteitsmedewerker
+
+- intent: ask_et_definition
+  examples: |
+    - Wat is Elektrotechniek?
+    - Wat houdt Elektrotechniek in?
+    - Wat behelst Elektrotechniek?
+    - Wat omvat Elektrotechniek?
+    - Vertel me over et
+    - wat houdt et in
+    - waarover gaat et
+    - wat is ET 
+    - waarover gaat elektro
+    - waarover gaat elektrotechniek
+    - waar leer je bij elektrotechniek
+    - is et een bacheloropleiding
+    - is elektrotechniek een bachelorstudie
+    - is et een bachelorstudie
+    - is elektrotechniek een masteropleiding?
+
+- intent: ask_et_goals
+  examples: |
+    - Wat zijn de doelen van de bacheloropleiding Elektrotechniek?
+    - Wat zijn de doelstellingen van Elektrotechniek?
+    - Wat wordt beoogd met de bacheloropleiding Elektrotechniek?
+    - Wat zijn de doelen van de bacheloropleiding ET? 
+    
+
+- intent: ask_et_duration
+  examples: |
+    - Hoe lang duurt de bachelorstudie Elektrotechniek?
+    - Wat is de duur van de bachelorstudie Elektrotechniek?
+    - Hoeveel jaar duurt de bachelorstudie Elektrotechniek?
+    - Hoeveel jaren duur de studie elektro
+    - hoe lang duurt et
+    - hoeveel jaar duurt et
+    - hoeveel jaar duurt elektrotechniek
+    - wat is de duur van de opleiding et
+    - wat is de duur van de studie et
+    - wat is de duur van de studie elektrotechniek
+    - binnen hoeveel jaar kan ik elektrotechniek afronden
+    - binnen hoeveel jaar kan ik et afronden
+    - hoeveel jaar neemt et
+    - de minimale aantal jaren voor de studie et
+    - de minimale aantal jaren voor de studie elektrotechniek
+
+- intent: ask_admission_requirements
+  examples: |
+    - Wat zijn de toelatingseisen voor de studie Elektrotechniek?
+    - Aan welke eisen moet ik voldoen om toegelaten te worden tot de studie Elektrotechniek?
+    - Hoe kan ik ET volgen
+    - wat zijn de eisen om ingeschreven te worden voor ET
+    - wat zijn de eisen om ingeschreven te worden voor Elektrotechniek
+    - welke vakken moet ik behalen om et te volgen
+    - welke vakken moet ik behalen om elektrotechniek te volgen
+    - moet ik een 6 hebben voor wiskunde op et te volgen? 
+    - hoeveel moet ik voor wiskunde hebben om elektrotechniek te volgen
+    - hoeveel moet ik voor natuurkunde hebben om elektrotechniek te volgen
+    - welke vakken moet ik goed scoren om elektrotechniek te volgen
+    - voor welke moet ik goed werken op de vwo om elektrotechniek te volgen
+    - hoeveel moet ik minimaal hebben voor de vwo vakken om et te volgen 
+    - hoeveel punten heb ik nodig om et te volgen
+    - hoeveel punten heb ik minimaal nodig om elektrotechniek te volgen
+    - wat is de eis van vakken om elektro te volgen 
+    - voor welke vakkem moet k goed werken op de vwo om et te volgen
+    - moet ik vwo volgen
+    - heb ik een vwo diploma nodig? 
+    - kan ik via schakeljaar elektrotechniek volgen
+    - kan ik ook via schakeljaar et volgen
+    - heb ik een s pakket nodig voor et
+    - heb ik een s pakket nodig voor elektrotechniek 
+    - hoe kom ik aanmerking om elektrotechniek te volgen
+
+- intent: ask_energy_engineering_definition
+  examples: |
+    - Wat is Energietechniek?
+    - Wat houdt Energietechniek in?
+    - Wat omvat Energietechniek?
+    - Kan je me vertellen over richting energietechniek?
+  
+
+- intent: ask_information_technology_definition
+  examples: |
+    - Wat is Informatietechniek?
+    - Wat houdt Informatietechniek in?
+    - Wat omvat Informatietechniek?
+    - geef een bescrijving van informatica
+    - was is informatica
+    - leg me informatica uit
+    - wat houd informatica in? 
+    - kan je me vertellen over de richting informatietechniek? 
+    
+
+- intent: ask_study_phases
+  examples: |
+    - Hoe is de studie opgedeeld in fasen?
+    - Wat zijn de fasen van de studie?
+    - hoeveel fasen heeft et
+    - hoeveel fasen heeft elektrotechniek
+    - heeft elektrotechniek 2 fasen? 
+    - is de 1e semester in fase 1?
+    - is de 2e semester in fase 1?
+    - is de 3e semester in fase 2?
+    - is de 4e semester in fase 2?
+    - is de 5e semester in fase 2?
+    - is de 6e semester in fase 2?
+    - zijn er twee fasen?
+    - zijn er 2 fasen? 
+    - was houdt B1 in?
+    - wat is B1?
+    - was is B2
+    - wat houdt B2 in? 
+    - wat zijn B1 en B2?
+    - geef me informatie over de fasen voor elektrotechniek
+    
+    
+
+- intent: ask_study_semesters
+  examples: |
+    - Hoe zijn de semesters van de studie ingedeeld?
+    - Wat zijn de indelingen van de semesters?
+    - Hoe zijn de semesters van de studie verdeeld?
+    - Hoe is het studiejaar ingedeeld?
+    - Hoe zijn de semesters ingedeeld?
+    - hoeveel semesters heeft et
+    - hoeveel semesters heeft elektrotechniek
+  
+
+- intent: ask_degree_with_honors
+  examples: |
+    - Hoe kan ik het predikaat "met genoegen" of "cum laude" behalen?
+    - Wat zijn de regels voor het behalen van het predikaat "met genoegen" of "cum laude"?
+    - Hoe behaal ik cum laude?
+    - wat is cum laude? 
+    - vertel me over cum laude
+    - hoe kom ik in aanmerking voor cum laude
+    - hoe krijg ik een cum laude
+    - hoe kan je een cum laude krijgen 
+    - wanneer krijg je een cum laude
+    - moet je gemiddeld 8 hebben voor cum laude
+    - wat je moet om een cum laude te ontvangen
+
+- intent: ask_education_methods
+  examples: |
+    - Welke onderwijsvormen worden gebruikt binnen Elektrotechniek?
+    - Wat zijn de verschillende onderwijsmethoden binnen Elektrotechniek?
+    - Op welke manieren wordt onderwijs gegeven binnen Elektrotechniek?
+    - op welke manieren wordt les verzorgd binnen et
+    - op welke manieren wordt les verzorgd binnen elektrotechniek
+    - wordt er prakticum verzorgd bij et
+    - wordt er prakticum verzorgd bij elektrotechniek
+    - hoe wordt er les verzogrd binnen et
+    - hoe wordt er les verzogrd binnen elektrotechniek
+
+- intent: ask_assessment_methods
+  examples: |
+    - Welke toetsvormen worden gebruikt binnen Elektrotechniek?
+    - Op welke manieren word je getoetst binnen Elektrotechniek?
+    - Welke methoden worden gebruikt voor het beoordelen van prestaties binnen Elektrotechniek?
+    - hoe op welke manieren wordt er getentamineerd binnen et
+    - hoe op welke manieren wordt er getentamineerd binnen elektrotechniek
+    - is er modelinge tentamen bij elektrotechniek?
+    - hoe wordt een vak getoetst binnen elektrotechniek 
+    - wordt er schriftelijk tentamen afgenomen binnen elektrotechniek
+    - wordt er schriftelijk tentamen afgenomen binnen et
+    - is er modelinge tentamen bij et
+    - vormen van toetsen binnen et? 
+    - vormen van toeten binnen elektrotechniek
+    
+    
+    
+
+- intent: ask_exam_rules
+  examples: |
+    - Wat zijn de regels voor tentamens binnen Elektrotechniek?
+    - Hoe zijn de regels omtrent tentamens binnen Elektrotechniek?
+    - Welke regels gelden er voor tentamens binnen Elektrotechniek?
+    - aan welke regels moet ik houden bij tentamens
+    - regels van tentamen?
+    - wat als ik laat ben bij tentamen?
+    - hoelang mag ik zitten als ik deel neem aan een tentamen
+    - mag ik materiaal lenen bij tentamens?
+    - mag ik materiaal lenen tijdens tentamens
+    - mag ik calculater lenen? 
+    - welke regels gelden bij tentamens?
+    - wat zijn de regels tijdens tentamens? 
+    - wat voor soort regels zijn er bij tentamens? 
+    - heb ik een studentenpas nodig bij tentamens
+    - heb ik een studentenkaart nodig? 
+    - wat heb ik allemaal nodig tijdens tentamens? 
+    - wat zijn de regels bij tentamens?
+    - wat voor regels gelden tijdens afnemen van tentamen
+
+- intent: Give_KeuzeVakFormulier_pdf
+  examples: |
+    - mag ik de keuzevak formulier? 
+    - kan ik de pdf van keuzevak formulier krijgen
+    - geef me de pdf van keuzevak formulier
+    - heb je de pdf van keuzevak formulier?
+    - kan je me de keuzevak formulier pdf geven 
+  
+
+- intent: Give_TemplateAfstudeerProject_pdf
+  examples: |
+    - mag ik de Template van de afstudeer Project? 
+    - kan ik de pdf van afstudeer Project krijgen
+    - geef me de pdf van afstudeer Project
+    - heb je de pdf van afstudeer Project?
+    - kan je me de afstudeer Projectpdf geven 
+
+
+- intent: RC of others courses in within Ftew
+  examples: |
+    - Wie zijn de overige rc? 
+    - wie is de rc van wb
+    - wie is de rc van werktuigbouwkunde
+    - wie is de rc van geo
+    - wie is de rc van geowetenschappen
+    - wie is de rc van Is
+    - wie is de rc van Infrastructuur
+    - wie is de rc van Milieuwetenschappen
+    - wie is de rc van Agrarische produktie
+    - wie is de rc van ag
+    - wie is de rc van Infra
+    - rc van wb
+    - rc van ag
+    - rc van infra
+    
+
+- intent: Ask_who_is_secrataris
+  examples: |
+    - wie is de scretaris van ET?
+    - wie is de scretaris van elektrotechniek? 
+    - Wie is Inez Cameron?
+    - wie is I.Cameron?
+    - wie is Cameron?
+    - secretaris van ET?
+    - secretaris van Elektro?
+    - secretaris van elektrotechniek?
+    
+
+- intent: Ask_TentamenBriefjes
+  examples: |
+    - Waar kan ik tentamen briefjes ophalen? 
+    - waar haal ik tentamen briefjes op? 
+    - bij wie kan ik tentamen briefjes ophalen
+    - tentamen briefjes ophalen
+    - Kan ik Inez Cameron tentamen briefjes ophalen?
+    - waar zijn tentamen briefjes? 
+    - Hoe haal ik tentamen briefjes op? 
+    - Bij welk gebouw haal ik tentamen briefjes op?
+    - waar haal ik mijn tentamen brief op
+    
+    
+
+- intent: Ask_inschrijfverklaring
+  examples: |
+    - Waar kan ik terecht voor het ophalen van inschrijfverklaring? 
+    - Hoe krijg ik mijn inschrijf erklaring op adek
+    - Ik wil een inschrijfverklaring
+    - Waar krijg ik een inschrijfverklaring
+    - Hoe vraag ik een inschrijfverklaring aan? 
+    - Kan ik een inschrijfverklaring aanvragen?
+    - Help me een inschrijfverklaring aanvragen?
+    - inschrijfverklaring aanvragen
+    - Hoe kan ik een inschrijfverklaring aanvragen? 
+    
+
+
+# Fotos intents:
+
+- intent: Ask directions of energielab
+  examples: |
+    - mag ik de route beschrijving naar het energielab
+    - hoe kom ik aan bij het energielab
+    - waar vindt ik het energielab
+    - Wat is de route naar het energielab?
+    - hoe kom ik bij het energielab?
+    - waar is het energielab? 
+    - kaart naar het energielab?
+    - map naar het energielab?
+    - routebeschrijving naar het energielab? 
+    - heb je de kaart van het energielab? 
+    - heb je een map van het energielab
+    - kan je me helpen hoe ik naar energielab ga? 
+    - hoe kom ik terecht bij het energielab?
+    - waar is het energielab gevestigd?
+    - locatie van het energielab?
+    - help me met de route naar het energielab
+    - hoe kom ik aan bij het energielab? 
+    - heb je een de route naar het energielab?
+    - weet je waar het energielab is? 
+    - hoe ziet het energielab eruit?
+
+
+
+- intent: Ask directions of infolab
+  examples: |
+    - mag ik de route beschrijving naar het infolab
+    - hoe kom ik aan bij het infolab
+    - waar vindt ik het infolab
+    - Wat is de route naar het infolab?
+    - hoe kom ik bij het infolab?
+    - waar is het infolab? 
+    - kaart naar het infolab?
+    - map naar het infolab?
+    - routebeschrijving naar het infolab? 
+    - heb je de kaart van het infolab? 
+    - heb je een map van het infolab
+    - kan je me helpen hoe ik naar infolab ga? 
+    - hoe kom ik terecht bij het infolab?
+    - waar is het infolab gevestigd?
+    - locatie van het infolab?
+    - help me met de route naar het infolab
+    - hoe kom ik aan bij het infolab? 
+    - heb je een de route naar het infolab?
+    - weet je waar het infolab is? 
+    - hoe ziet het infolab eruit?
+
+- intent: Ask directions of cel
+  examples: |
+    - mag ik de route beschrijving naar het cel
+    - hoe kom ik aan bij het cel
+    - waar vindt ik het cel
+    - Wat is de route naar het cel?
+    - hoe kom ik bij het cel?
+    - waar is het cel? 
+    - kaart naar het cel?
+    - map naar het cel?
+    - routebeschrijving naar het cel? 
+    - heb je de kaart van het cel? 
+    - heb je een map van het cel
+    - kan je me helpen hoe ik naar cel ga? 
+    - hoe kom ik terecht bij het cel?
+    - waar is het cel gevestigd?
+    - locatie van het cel?
+    - help me met de route naar het cel
+    - hoe kom ik aan bij het cel? 
+    - heb je een de route naar het cel?
+    - weet je waar het cel is? 
+    - hoe ziet het cel eruit?
+    - mag ik de route beschrijving naar het computer educatie lab
+    - hoe kom ik aan bij het computer educatie lab
+    - waar vindt ik het computer educatie lab
+    - Wat is de route naar het computer educatie lab?
+    - hoe kom ik bij het computer educatie lab?
+    - waar is het computer educatie lab? 
+    - kaart naar het computer educatie lab?
+    - map naar het computer educatie lab?
+    - routebeschrijving naar het computer educatie lab? 
+    - heb je de kaart van het computer educatie lab? 
+    - heb je een map van het computer educatie lab
+    - kan je me helpen hoe ik naar het computer educatie lab ga? 
+    - hoe kom ik terecht bij het computer educatie lab?
+    - waar is het computer educatie lab gevestigd?
+    - locatie van het computer educatie lab?
+    - help me met de route naar het computer educatie lab
+    - hoe kom ik aan bij het computer educatie lab? 
+    - heb je een de route naar het computer educatie lab?
+    - weet je waar het computer educatie lab is? 
+    - hoe ziet het computer educatie lab eruit?
+
+
+- intent: Ask directions of telecomlab
+  examples: |
+    - mag ik de route beschrijving naar het telecomlab
+    - hoe kom ik aan bij het telecomlab
+    - waar vindt ik het telecomlab
+    - Wat is de route naar het telecomlab?
+    - hoe kom ik bij het telecomlab?
+    - waar is het telecomlab? 
+    - kaart naar het telecomlab?
+    - map naar het telecomlab?
+    - routebeschrijving naar het telecomlab? 
+    - heb je de kaart van het telecomlab? 
+    - heb je een map van het telecomlab
+    - kan je me helpen hoe ik naar telecomlab ga? 
+    - hoe kom ik terecht bij het telecomlab?
+    - waar is het telecomlab gevestigd?
+    - locatie van het telecomlab?
+    - help me met de route naar het telecomlab
+    - hoe kom ik aan bij het telecomlab? 
+    - heb je een de route naar het telecomlab?
+    - weet je waar het telecomlab is? 
+    - hoe ziet het telecomlab eruit?
+    - mag ik de route beschrijving naar het telecommunicatie lab
+    - hoe kom ik aan bij het telecommunicatie lab
+    - waar vind ik het telecommunicatie lab
+    - Wat is de route naar het telecommunicatie lab?
+    - hoe kom ik bij het telecommunicatie lab?
+    - waar is het telecommunicatie lab? 
+    - kaart naar het telecommunicatie lab?
+    - map naar het telecommunicatie lab?
+    - routebeschrijving naar het telecommunicatie lab? 
+    - heb je de kaart van het telecommunicatie lab? 
+    - heb je een map van het telecommunicatie lab
+    - kan je me helpen hoe ik naar het telecommunicatie lab ga? 
+    - hoe kom ik terecht bij het telecommunicatie lab?
+    - waar is het telecommunicatie lab gevestigd?
+    - locatie van het telecommunicatie lab?
+    - help me met de route naar het telecommunicatie lab
+    - hoe kom ik aan bij het telecommunicatie lab? 
+    - heb je een de route naar het telecommunicatie lab?
+    - weet je waar het telecommunicatie lab is? 
+    - hoe ziet het telecommunicatie lab eruit?
+
+
+  
+
+- intent: Ask directions of administratie
+  examples: |
+    - mag ik de route beschrijving naar administratie
+    - hoe kom ik aan bij administratie
+    - waar vindt ik administratie
+    - Wat is de route naar administratie?
+    - hoe kom ik bij administratie?
+    - waar is administratie? 
+    - kaart naar administratie?
+    - map naar administratie?
+    - routebeschrijving naar administratie? 
+    - heb je de kaart van administratie? 
+    - heb je een map van administratie
+    - kan je me helpen hoe ik naar administratie ga? 
+    - hoe kom ik terecht bij administratie?
+    - waar is administratie gevestigd?
+    - locatie van administratie?
+    - help me met de route naar administratie
+    - hoe kom ik aan bij administratie? 
+    - heb je een de route naar administratie?
+    - weet je waar administratie is? 
+    - hoe ziet het administratie eruit?
+
+- intent: Ask directions of lokaal 23
+  examples: |
+    - mag ik de route beschrijving naar lokaal 23
+    - hoe kom ik aan bij lokaal 23
+    - waar vindt ik lokaal 23
+    - Wat is de route naar lokaal 23?
+    - hoe kom ik bij lokaal 23?
+    - waar is lokaal 23? 
+    - kaart naar lokaal 23?
+    - map naar lokaal 23?
+    - routebeschrijving naar lokaal 23? 
+    - heb je de kaart van lokaal 23? 
+    - heb je een map van lokaal 23
+    - kan je me helpen hoe ik naar lokaal 23 ga? 
+    - hoe kom ik terecht bij lokaal 23?
+    - waar is lokaal 23 gevestigd?
+    - locatie van lokaal 23?
+    - help me met de route naar lokaal 23
+    - hoe kom ik aan bij lokaal 23? 
+    - heb je een de route naar lokaal 23?
+    - weet je waar lokaal 23 is? 
+    - hoe ziet lokaal 23 eruit?
+
+- intent: Button Direction for EnergyLab
+  examples: |
+    - /ingang_energie_lab33
+    - /geb17_energie_lab_3338880
+    - /geb19_energie_lab_29292929
+
+- intent: Button Direction for InfoLab
+  examples: |
+    - /ingang_Informatie_lab12
+    - /geb17_Informatie_lab1345
+    - /geb19_Informatie_lab00789
+
+- intent: Button Direction for Cel
+  examples: |
+    - /ingang_Computer_educatief_Lab
+    - /geb17_Computer_educatief_Lab_6969696
+    - /geb19_Computer_educatief_Lab_01010
+
+- intent: Button Direction for Telecom
+  examples: |
+    - /ingang_Telecom_Lab_100999
+    - /geb17_Telecom_Lab_00066000700
+    - /geb19__Telecom_Lab_444000777
+
+- intent: Button Direction for Admin
+  examples: |
+    - /ingang_naar_administratie
+    - /geb17_naar_administratie_565656565
+    - /geb19_naar_administratie_464646469898
+
+- intent: Button Direction for Lok23
+  examples: |
+    - /ingang_tot_lokaal_23_8989
+    - /geb17_tot_lokaal_23_575757574546
+    - /geb19_tot_lokaal_23_3834949495670
+
+
+- intent: Ask about directions
+  examples: |
+    - ben je in staat route te geven naar lokalen?
+    - kan je directions geven? 
+    - kan je een map geven?
+    - kan je een map generaten? 
+    - heb je de route naar lokalen specifiek voor Et studenten? 
+    - welke routes kan je allemaal geven? 
+    - wat voor kaarten kan je geven? 
+    - kaarten naar welke lokalen bezit je?
+    - mappen naar welke lokalen bezit je?
+    - fotos van welke lokalen bezit je? 
+    - heb je route gegevens van lokalen? 
+    - heb je een map voor me? 
+    - ben je instaat een kaart te geven?
+
+- intent: Ask Time of Knowledge
+  examples: |
+    - tot wanneer is je kennis? 
+    - tot welk jaar is je kennis?
+    - Hoe actueel is je informatie?
+    - Wat is de laatste datum waarop je informatie is bijgewerkt?
+    - Is je kennis up-to-date?
+    - Wat is de geldigheid van je kennis?
+    - is je kennis tot vandaag?
+    - weet je tot vandaag? 
+    - tot wanneer weet je? 
+    - wanneer heb je een update gehad
+     
+
+
+- intent: ask about semester subjects
+  examples: |
+    - Welke vakken zijn er per semester? 
+    - noem alle vakken op die verzorgd wordt bij et
+    - noem alle vakken op die verzorgd wordt bij Elektrotechniek
+    - welke vakken worden verzorgd in elektrotechniek?
+    - wekke vakken worden verzorgd per semester
+    - noem alle vakken op per semester
+    - hoeveel vakken per semester? 
+    - hoeveel vakken ga ik volgen in elk semester
+    - noem alle vakken op
+    - ik wil informatie over welke vakken verzorgd worden in welk semester
+    - noem de vakken binnen et op
+    - welke vakken ijn er bij elektrotechniek
+    - noem de vakken binnen elektrotehniek op 
+    
+
+- intent: Small Discription of Energy Subjects
+  examples: |
+    - Geef me een kleine omschrijving van elk vak binnen energietechniek?
+    - Geef me een omschrijving van energievakken.
+    - Mag ik een omschrijving van energievakken? 
+    - Vertel me over elk vak in het 5e semester bij energietechniek.
+    - Wat is de inhoud van de vakken in het 5e semester van de opleiding energietechniek?
+    - Kun je me meer vertellen over de vakken die worden aangeboden in het 5e semester van energietechniek?
+    - Geef me een kleine omschrijving van elk vak binnen elektriciteitsvoorzienning?
+    - Geef me een omschrijving van elektriciteitsvoorzienning vakken.
+    - Mag ik een omschrijving van elektriciteitsvoorzienning vakken? 
+    - Vertel me over elk vak in het 5e semester bij elektriciteitsvoorzienning.
+    - Wat is de inhoud van de vakken in het 5e semester van de opleiding elektriciteitsvoorzienning?
+    - Kun je me meer vertellen over de vakken die worden aangeboden in het 5e semester van elektriciteitsvoorzienning?
+    - welke energietechniek vakken zijn er
+    - hoeveel  energie techniek vakken zijn er
+    - noem de energietechniek vakken op
+    - welke vakken zijn in de richting energietechniek
+    - hoeveel vakken zijn er in de richting energietechniek
+
+- intent: Small Discription of Informatica Subjects
+  examples: |
+    - Geef me een kleine omschrijving van elk vak binnen informatica?
+    - Geef me een omschrijving van informatica vakken
+    - Mag ik een omschrijving van informatica vakken? 
+    - Vertel me over elk vak in het 5e semester bij informatica.
+    - Wat is de inhoud van de vakken in het 5e semester van de opleiding informatica?
+    - Kun je me meer vertellen over de vakken die worden aangeboden in het 5e semester van informatica?
+    - welke informatica vakken zijn er
+    - hoeveel informatica vakken zijn er
+    - noem de informatica vakken op
+    - hoeveel vakken zijn er in de richting informatie techniek
+
+- intent: Ask teacher's name of Energy Subjects
+  examples: |
+    - Wie zijn de docenten bij energietechniek
+    - noem de docenten namen op bij energietechniek
+    - hoeveel docenten zijn er bij energietechniek
+    - welke docenten geven les bij energietechniek
+    - wie zijn de docenten van de orientatie energie
+    - weet je wie de docenten zijn van de orientatie elektriciteitsvoorzienning?
+    - Wie zijn de docenten bij elektriciteitsvoorzienning
+    - noem de docenten namen op bij elektriciteitsvoorzienning
+    - hoeveel docenten zijn er bij elektriciteitsvoorzienning
+    - welke docenten geven les bij elektriciteitsvoorzienning
+    - wie zijn de docenten van de orientatie elektriciteitsvoorzienning
+    - namen van de docenten binnen de richting elektriciteitsvoorzienning
+    - welke docenten geven les binenn de richting elektriciteitsvoorzienning
+    - namen van de docenten binnen de richting energietechniek
+    - welke docenten geven les binenn de richting energietechniek
+    
+
+- intent: Ask teacher's name of Informatica Subjects
+  examples: |
+    - Wie zijn de docenten bij Informatica
+    - noem de docenten namen op bij Informatica
+    - hoeveel docenten zijn er bij Informatica
+    - welke docenten geven les bij Informatica
+    - namen van de docenten binnen de richting informatica
+    - welke docenten geven les binenn de richting informatica
+    - wie zijn de docenten van de orientatie Informatica
+    - weet je wie de docenten zijn van de orientatie Informatica?
+
+- intent: greet with name
+  examples: |
+    - Mijn naam is [Rinesh](name)
+    - Ik ben [Rinesh](name), ik heb een vraag
+    - Hallo ik ben [rinesh](name), kan ik iets vragen
+    - hi ik ben [rinesh](name)
+    - Hey ik ben [rinesh](name), ik heb een vraagje
+    - Hallo mijn naam is [rinesh](name)
+    - Mijn naam is [Ruchil](name)
+    - Ik ben [Ruchil](name), ik heb een vraag
+    - Hallo ik ben [Ruchil](name), kan ik iets vragen
+    - hi ik ben [Ruchil](name)
+    - Hey ik ben [Ruchil](name), ik heb een vraagje
+    - Hallo mijn naam is [Ruchil](name)
+    - Mijn naam is [Karan](name)
+    - Ik ben [Karan](name), ik heb een vraag
+    - Hallo ik ben [Karan](name), kan ik iets vragen
+    - hi ik ben [Karan](name)
+    - Hey ik ben [Karan](name), ik heb een vraagje
+    - Hallo mijn naam is [Karan](name)
+    - Mijn naam is [Dylan](name)
+    - Ik ben [Dylan](name), ik heb een vraag
+    - Hallo ik ben [Dylan](name), kan ik iets vragen
+    - hi ik ben [Dylan](name)
+    - Hey ik ben [Dylan](name), ik heb een vraagje
+    - Hallo mijn naam is [Dylan](name)
+    - Mijn naam is [Altaaf](name)
+    - Ik ben [Altaaf](name), ik heb een vraag
+    - Hallo ik ben [Altaaf](name), kan ik iets vragen
+    - hi ik ben [Altaaf](name)
+    - Hey ik ben [Altaaf](name), ik heb een vraagje
+    - Hallo mijn naam is [Altaaf](name)
+    - Mijn naam is [Alex](name)
+    - Ik ben [Alex](name), ik heb een vraag
+    - Hallo ik ben [Alex](name), kan ik iets vragen
+    - hi ik ben [Alex](name)
+    - Hey ik ben [Alex](name), ik heb een vraagje
+    - Hallo mijn naam is [Alex](name)
+    - Mijn naam is [Teesha](name)
+    - Ik ben [Teesha](name), ik heb een vraag
+    - Hallo ik ben [Teesha](name), kan ik iets vragen
+    - hi ik ben [Teesha](name)
+    - Hey ik ben [Teesha](name), ik heb een vraagje
+    - Hallo mijn naam is [Teesha](name)
+    - Mijn naam is [Ashis](name)
+    - Ik ben [Ashis](name), ik heb een vraag
+    - Hallo ik ben [Ashis](name), kan ik iets vragen
+    - hi ik ben [Ashis](name)
+    - Hey ik ben [Ashis](name), ik heb een vraagje
+    - Hallo mijn naam is [Ashis](name) 
+    - Mijn naam is [Andrew](name)
+    - Ik ben [Andrew](name), ik heb een vraag
+    - Hallo ik ben [Andrew](name), kan ik iets vragen
+    - hi ik ben [Andrew](name)
+    - Hey ik ben [Andrew](name), ik heb een vraagje
+    - Hallo mijn naam is [Andrew](name)
+
+- intent: Questions not for bot
+  examples: |
+    - heb je de namen lijst van et
+    - heb je de namen lijst van elektrotechniek
+    - wie zit in elektrotechniek? 
+    - noem mensen van et op
+    - kan je me helpen met tentamen werken
+    - heb je huiswerk
+    - kan je huiswerk maken
+    - heb je tentamen werkjes
+    - heb je antwoorden over toetsen
+    - noem mensen van elektrotechniek op 
+
+- intent: Ask about creation
+  examples: |
+    - wat is je programmeer taal 
+    - ben je geprogrammeerd in python? 
+    - hoe ben je gemaakt? 
+    - in welke taal ben je geschreven? 
+    - ben je gemaakt met python
+    - ben je gemaakt met java? 
+    - ben je gemaakt met c++?
+    - ben je geprogrammeerd in c++? 
+    - ben je geprogrammeerd in java? 
+    - ben je geprogrammeerd in c#? 
+    - wat is je programmeertaal? 
+    - ben je geschreven in python? 
+    - ben je geschreven met java?
+    - maak je deel uit van chatgpt? 
+    - ben je van openai? 
+    - ben je chatgpt? 
+    - ben je een AI?
+
+- intent: Ask about Contact info
+  examples: |
+    - van wie heb je contanct info? 
+    - van wie je nummers? 
+    - van wie heb je allemaal contact info
+    - heb je contact info?
+    - van wie op adek heb je contact info? 
+    - noem op van wie je contact info hebt
+    - goedemorgen, van wie heb je contact info
+    - van wie heb je contanct informatie? 
+    - van wie je nummers? 
+    - van wie heb je allemaal contact informatie
+    - heb je contact informatie?
+    - van wie op adek heb je contact informatie? 
+    - noem op van wie je contact informatie hebt
+    - goedemorgen, van wie heb je contact informatie
+
+- intent: buttons_contact_info
+  examples: |
+    - /link_secretaris_et
+    - /link_De_studentendecaan
+    - /link_Het_faculteitsbureau
+    - /link_examencommissie
+    - /link_rc
+
+- intent: Ask directions of gebouw 16
+  examples: |
+    - mag ik de route beschrijving naar gebouw 16
+    - hoe kom ik aan bij gebouw 16
+    - waar vindt ik gebouw 16
+    - Wat is de route naar gebouw 16?
+    - hoe kom ik bij gebouw 16?
+    - waar is gebouw 16? 
+    - kaart naar gebouw 16?
+    - map naar gebouw 16?
+    - routebeschrijving naar gebouw 16? 
+    - heb je de kaart van gebouw 16? 
+    - heb je een map van gebouw 16
+    - kan je me helpen hoe ik naar gebouw 16 ga? 
+    - hoe kom ik terecht bij gebouw 16?
+    - waar is gebouw 16 gevestigd?
+    - locatie van gebouw 16?
+    - help me met de route naar gebouw 16
+    - hoe kom ik aan bij gebouw 16? 
+    - heb je een de route naar gebouw 16?
+    - weet je waar gebouw 16 is? 
+    - hoe ziet gebouw 16 eruit?
+
+- intent: Button to find Geb 16
+  examples: |
+    - /find_geb16_from_entrance
+    - /find_geb16_from_building17-565656
+    - /find_geb16_van_grbouw19-7878
+    

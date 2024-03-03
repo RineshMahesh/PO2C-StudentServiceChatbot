@@ -1,0 +1,396 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+
+- story: Time_of_day_Morning
+  steps:
+  - intent: greet_goodmorning
+  - action: utter_greet_goodmorning
+
+- story: Time_of_day_afternoon
+  steps:
+  - intent: greet_goodafternoon
+  - action: utter_greet_goodafternoon
+
+- story: Time_of_day_Night
+  steps:
+  - intent: greet_goodnight
+  - action: utter_greet_goodnight
+
+- story: Location of Adek
+  steps:
+    - intent: Ask Location Of Adek
+    - action: utter_adek_locatie
+
+- story: Ask about Adek General_Affirm_path
+  steps:
+    - intent: Ask About Adek
+    - action: utter_ask_about_adek
+    - intent: inform_affirm
+    - action: utter_adek_faculties
+
+- story: Ask about Adek General_Deny_path
+  steps:
+    - intent: Ask About Adek
+    - action: utter_ask_about_adek
+    - intent: deny
+    - action: utter_deny
+
+- story: DirectorOfAdek
+  steps:
+    - intent: DirectorOfAdek
+    - action: utter_DirectorOfAdek
+
+- story: Studentspace
+  steps:
+    - intent: Studentspace Questions
+    - action: utter_studentspace
+
+- story: Not Happy with answer_story
+  steps:
+    - intent: Not Happy with Answer
+    - action: utter_not_happy_with_answer
+
+- story: Ask about rc info
+  steps:
+    - intent: RC van ET
+    - action: utter_rc_van_et
+
+- story: Ask Accreditation info
+  steps:
+    - intent: ask_accreditation_et
+    - action: utter_ask_accreditation_et
+
+- story: ask ftew origin
+  steps:
+    - intent: ask_ftew_origin
+    - action: utter_ask_ftew_origin
+
+- story: ask task of ftew
+  steps:
+    - intent: ask_ftew_tasks
+    - action: utter_ask_ftew_tasks
+
+- story: what To Study On Adek
+  steps:
+    - intent: What to study
+    - action: utter_adek_faculties
+
+- story: Studierichtingen van Ftew
+  steps:
+    - intent: ask_ftew_study_directions
+    - action: utter_ask_ftew_study_directions
+
+- story: vragen Waaruit het faculty board bestaat
+  steps:
+    - intent: ask_faculty_board_composition
+    - action: utter_faculty_board_composition
+
+- story: ask_discription_exam_committee
+  steps:
+    - intent: ask_exam_committee
+    - action: utter_examination_committee_description
+
+- story: ask_exam_committee_members
+  steps:
+    - intent: ask_exam_committee_members
+    - action: utter_examination_committee_members
+
+- story: ask_exam_committee_contact
+  steps:
+    - intent: ask_exam_committee_contact
+    - action: utter_examination_committee_contact
+
+
+- story: ask_Opleiding_committee
+  steps:
+    - intent: ask_Opleiding_committee
+    - action: utter_Opleiding_committee_description
+
+- story: ask_student_committee
+  steps:
+    - intent: ask_student_committee
+    - action: utter_student_committee_description
+
+- story: ask_student_committee_members
+  steps:
+    - intent: ask_student_committee_members
+    - action: utter_student_committee_members
+
+- story: ask_faculty_office
+  steps:
+    - intent: ask_faculty_office
+    - action: utter_faculty_office_description
+
+- story: ask_student_dean
+  steps:
+    - intent: ask_student_dean
+    - action: utter_student_dean_description
+
+- story: ask_faculty_office_location
+  steps:
+    - intent: ask_faculty_office_location
+    - action: utter_ask_faculty_office_location
+
+- story: ask_student_dean_contact
+  steps:
+    - intent: ask_student_dean_contact
+    - action: utter_student_dean_description_contact
+
+- story: ask_quality_officer
+  steps:
+    - intent: ask_quality_officer
+    - action: utter_quality_officer_description
+
+- story: ask_et_definition
+  steps:
+    - intent: ask_et_definition
+    - action: utter_et_description
+
+- story: ask_et_goals
+  steps:
+    - intent: ask_et_goals
+    - action: utter_et_goals
+
+
+- story: ask_et_duration
+  steps:
+    - intent: ask_et_duration
+    - action: utter_et_duration_load
+
+- story: ask_admission_requirements
+  steps:
+    - intent: ask_admission_requirements
+    - action: utter_et_admission_requirements
+
+- story: ask_energy_engineering_definition_YesPath
+  steps:
+    - intent: ask_energy_engineering_definition
+    - action: utter_energietechniek_description
+    - intent: inform_affirm
+    - action: utter_Small Discription of Energy Subjects
+
+- story: ask_energy_engineering_definition_NoPath
+  steps:
+    - intent: ask_energy_engineering_definition
+    - action: utter_energietechniek_description
+    - intent: deny
+    - action: utter_deny
+
+- story: ask_information_technology_definition_YesPath
+  steps:
+    - intent: ask_information_technology_definition
+    - action: utter_informatietechniek_description
+    - intent: inform_affirm
+    - action: utter_Small Discription of Informatica Subjects
+
+- story: ask_information_technology_definition_NoPath
+  steps:
+    - intent: ask_information_technology_definition
+    - action: utter_informatietechniek_description
+    - intent: deny
+    - action: utter_deny
+
+- story: ask_study_phases
+  steps:
+    - intent: ask_study_phases
+    - action: utter_phases_division
+
+- story: ask_study_semesters
+  steps:
+    - intent: ask_study_semesters
+    - action: utter_semesters_division
+
+- story: ask_degree_with_honors
+  steps:
+    - intent: ask_degree_with_honors
+    - action: utter_cum_laude_criteria
+
+- story: ask_education_methods
+  steps:
+    - intent: ask_education_methods
+    - action: utter_education_formats
+
+
+- story: ask_assessment_methods
+  steps:
+    - intent: ask_assessment_methods
+    - action: utter_assessment_formats
+
+- story: ask_exam_rules
+  steps:
+    - intent: ask_exam_rules
+    - action: utter_exam_rules
+
+- story: Give_KeuzeVakFormulier_pdf
+  steps:
+    - intent: Give_KeuzeVakFormulier_pdf
+    - action: utter_Give_KeuzeVakFormulier_pdf
+
+- story: Give_TemplateAfstudeerProject_pdf
+  steps:
+    - intent: Give_TemplateAfstudeerProject_pdf
+    - action: utter_Give_TemplateAfstudeerProject_pdf
+
+- story: RC of others courses in within Ftew
+  steps:
+    - intent: RC of others courses in within Ftew
+    - action: utter_RC of others courses in within Ftew
+
+- story: Ask_who_is_secrataris
+  steps:
+    - intent: Ask_who_is_secrataris
+    - action: utter_Ask_who_is_secrataris
+
+- story: Ask_TentamenBriefjes_YesPath
+  steps:
+    - intent: Ask_TentamenBriefjes
+    - action: utter_Ask_TentamenBriefjes
+    - intent: inform_affirm
+    - action: utter_Button Direction for Admin
+    - intent: Button Direction for Admin
+    - action: action_send_admin_Pics
+
+- story: Ask_TentamenBriefjes_NoPath
+  steps:
+    - intent: Ask_TentamenBriefjes
+    - action: utter_Ask_TentamenBriefjes
+    - intent: deny
+    - action: utter_deny
+
+- story: Ask_inschrijfverklaring
+  steps:
+    - intent: Ask_inschrijfverklaring
+    - action: utter_Ask_inschrijfverklaring
+
+#fotos stories
+
+- story: Directions of energyLab
+  steps:
+    - intent: Ask directions of energielab
+    - action: utter_Button Direction for EnergyLab
+
+- story: Ask directions of infolab
+  steps:
+    - intent: Ask directions of infolab
+    - action: utter_Button Direction for InfoLab
+
+
+- story: Ask directions of cel
+  steps:
+    - intent: Ask directions of cel
+    - action: utter_Button Direction for Cel
+
+
+- story: Ask directions of telecomlab
+  steps:
+    - intent: Ask directions of telecomlab
+    - action: utter_Button Direction for Telecom
+
+
+- story: Ask directions of administratie
+  steps:
+    - intent: Ask directions of administratie
+    - action: utter_Button Direction for Admin
+
+
+- story: Ask directions of lokaal 23
+  steps:
+    - intent: Ask directions of lokaal 23
+    - action: utter_Button Direction for Lok23
+
+- story: Ask about directions
+  steps:
+    - intent: Ask about directions
+    - action: utter_Ask about directions
+
+- story: Ask directions of gebouw 16
+  steps:
+    - intent: Ask directions of gebouw 16
+    - action: utter_Button Direction for Geb16
+
+
+
+#fotos stop hier
+
+- story: Ask Time of Knowledge
+  steps:
+    - intent: Ask Time of Knowledge
+    - action: utter_Ask Time of Knowledge
+
+- story: Ask Subjects of each semester
+  steps:
+    - intent: ask about semester subjects
+    - action: utter_ask about semester subjects
+
+
+- story: Small Discription of Energy Subjects_YesPath
+  steps:
+    - intent: Small Discription of Energy Subjects
+    - action: utter_Small Discription of Energy Subjects
+    - intent: inform_affirm
+    - action: utter_Ask teacher's name of Energy Subjects
+
+- story: Small Discription of Energy Subjects_NoPath
+  steps:
+    - intent: Small Discription of Energy Subjects
+    - action: utter_Small Discription of Energy Subjects
+    - intent: deny
+    - action: utter_deny
+
+- story: Small Discription of Informatica Subjects_YesPath
+  steps:
+    - intent: Small Discription of Informatica Subjects
+    - action: utter_Small Discription of Informatica Subjects
+    - intent: inform_affirm
+    - action: utter_Ask teacher's name of Informatica Subjects
+
+- story: Small Discription of Informatica Subjects_NoPath
+  steps:
+    - intent: Small Discription of Informatica Subjects
+    - action: utter_Small Discription of Informatica Subjects
+    - intent: deny
+    - action: utter_deny
+
+- story: Ask teacher's name of Energy Subjects
+  steps:
+    - intent: Ask teacher's name of Energy Subjects
+    - action: utter_Ask teacher's name of Energy Subjects
+
+- story: Ask teacher's name of Informatica Subjects
+  steps:
+    - intent: Ask teacher's name of Informatica Subjects
+    - action: utter_Ask teacher's name of Informatica Subjects
+
+- story: Greet user with name
+  steps:
+    - intent: greet with name
+    - action: action_greet_user
+
+- story: Questions not for bot
+  steps:
+    - intent: Questions not for bot
+    - action: utter_Questions not for bot
+
+- story: Ask about creation
+  steps:
+    - intent: Ask about creation
+    - action: utter_Ask about creation
+
+- story: Ask about Contact info
+  steps:
+    - intent: Ask about Contact info
+    - action: utter_Ask about Contact info
+

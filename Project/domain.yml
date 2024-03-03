@@ -1,0 +1,628 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - greet_goodmorning
+  - greet_goodafternoon
+  - greet_goodnight
+  - Ask Location Of Adek
+  - Ask About Adek
+  - DirectorOfAdek
+  - inform_affirm
+  - Studentspace Questions
+  - deny
+  - Not Happy with Answer
+  - inform_button_clicked
+  - RC van ET
+  - ask_accreditation_et
+  - ask_ftew_origin
+  - ask_ftew_tasks
+  - ask_ftew_study_directions
+  - ask_faculty_board_composition
+  - ask_exam_committee
+  - ask_exam_committee_contact
+  - ask_exam_committee_members
+  - ask_Opleiding_committee
+  - ask_student_committee
+  - ask_student_committee_members
+  - ask_faculty_office
+  - ask_faculty_office_location
+  - ask_student_dean
+  - ask_student_dean_contact
+  - ask_quality_officer
+  - ask_et_definition
+  - ask_et_goals
+  - ask_et_duration
+  - ask_admission_requirements
+  - ask_energy_engineering_definition
+  - ask_information_technology_definition
+  - ask_study_phases
+  - ask_study_semesters
+  - ask_degree_with_honors
+  - ask_education_methods
+  - ask_assessment_methods
+  - ask_exam_rules
+  - What to study
+  - Give_KeuzeVakFormulier_pdf
+  - Give_TemplateAfstudeerProject_pdf
+  - RC of others courses in within Ftew
+  - Ask_who_is_secrataris
+  - Ask_TentamenBriefjes
+  - Ask_inschrijfverklaring
+  - Ask directions of energielab
+  - Ask directions of infolab
+  - Ask directions of cel
+  - Ask directions of telecomlab
+  - Ask directions of administratie
+  - Ask directions of lokaal 23
+  - Ask about directions
+  - Ask Time of Knowledge
+  - ask about semester subjects
+  - Small Discription of Energy Subjects
+  - Small Discription of Informatica Subjects
+  - Ask teacher's name of Energy Subjects
+  - Ask teacher's name of Informatica Subjects
+  - greet with name
+  - Questions not for bot
+  - Ask about creation
+  - Ask about Contact info
+  - Ask directions of gebouw 16
+  - Button Direction for EnergyLab
+  - Button Direction for InfoLab
+  - Button Direction for Cel
+  - Button Direction for Telecom
+  - Button Direction for Admin
+  - Button Direction for Lok23
+  - Button to find Geb 16
+  - buttons_contact_info
+
+
+
+
+
+actions:
+  - action_handle_button
+  - action_handle_button_contactinfo
+  - action_send_energieLab_Pics
+  - action_send_infoLab_Pics
+  - action_send_celLab_Pics
+  - action_send_telecomLab_Pics
+  - action_send_admin_Pics
+  - action_send_Lok23_Pics
+  - action_send_Geb16_Pics
+  - action_send_Geb17To16_Pics
+  - action_send_Geb19To16_Pics
+  - action_greet_user
+  - action_hello_world
+
+
+responses:
+  utter_greet:
+  - text: Hallo! Waarmee kan ik u helpen vandaag?
+
+  utter_goodbye:
+  - text: Fijne dag verder!
+
+  utter_greet_goodmorning:
+    - text: Goedemorgen! Waarmee kan ik u helpen vandaag?
+
+  utter_greet_goodafternoon:
+    - text: Goedemiddag! Waarmee kan ik u helpen vandaag?
+
+  utter_greet_goodnight:
+    - text: Goedeavond! Waarmee kan ik u helpen vandaag?
+
+  utter_deny:
+    - text: "Okey, als u andere vragent hebt, stelt u die maar"
+
+  utter_not_happy_with_answer:
+    - text: "Ik begrijp dat je niet tevreden bent met mijn antwoord. 
+    Zou je me kunnen vertellen wat je specifiek wilt weten"
+
+
+
+
+  utter_iamabot:
+  - text: "
+Ik ben een studentenservice-chatbot van de Anton de Kom Universiteit.       
+Momenteel ben ik in staat om algemene informatie te verstrekken over de Anton de Kom Universiteit
+de Faculteit der Technologische Wetenschappen (FteW) en de studierichting Elektrotechniek. 
+Daarnaast kan ik ook helpen met het verstrekken van routebeschrijvingen naar specifieke locaties voor studenten Elektrotechniek. 
+"
+
+  utter_adek_locatie:
+    - text: "Universiteitscampus Leysweg 86 | P.O.B: 9212 
+    Paramaribo, Suriname. Hier een link naar de locatie in google maps:
+    https://www.google.com/maps?q=5.813094114832975, -55.21728549205228
+    "
+
+  utter_ask_about_adek:
+    - text: "De Universiteit van Suriname werd ingesteld in 1966 en opende op 1 november 1968 haar deuren. 
+    Zij draagt sinds 17 oktober 1983 de naam Anton de Kom Universiteit van Suriname (AdeKUS), 
+    vernoemd naar de nationalistische vrijheidsstrijder Anton de Kom. Wilt u verdere 
+    informatie over de faculteiten op de adeKUS?
+    "
+
+
+  utter_adek_faculties:
+      - text:  |
+          - AdeKUS bestaat uit de volgende faculteiten:
+          - Faculteit | Afkorting
+           
+          - FdHum     | Faculteit der Humaniora
+          - FTeW      | Faculteit der Technologische Wetenschappen
+          - FMeW      | Faculteit der Medische Wetenschappen
+          - FMijW     | Faculteit der Maatschappijwetenschappen
+          - FJW       | Faculteit der Juridische Wetenschappen
+          - FWNW      | Faculteit Wis-en Natuurkundige Wetenschappen
+          - IGSR      | Institute for Graduate Studies & Research
+          - Voor meer informatie klikt op een van de volgende opties:
+        buttons:
+          - title: "Bachelor opleidingen"
+            payload: "/link_bachelor_opleidingen"
+          - title: "Masteropleidingen"
+            payload: "/link_master_opleidingen"
+
+
+  utter_DirectorOfAdek:
+    - text: "De huidige voorzitter van de Anton De Kom Universteit is Shanti Adensi Venetiaan.
+     In 2020 werd zij de eerste vrouwelijke voorzitter van de Anton de Kom Universiteit.
+     In 2021 werd zij de hoogleraar wiskundige statistiek."
+
+  utter_studentspace:
+    - text: |
+        Studentspace (ook wel Moodle genoemd) is het officiële platform van de Anton de Kom Universiteit van Suriname voor studenten.
+        Hier kun je de volgende functies gebruiken:
+        1. Je studieprogramma bekijken en beheren
+        2. Je cijfers inzien
+        3. Je rooster bekijken
+        4. Je inschrijven voor cursussen
+        5. Communiceren met docenten en medestudenten
+        6. Je studieadministratie regelen
+        7. Link naar Moodle: https://student.uvs.edu/
+       
+
+
+  utter_rc_van_et:
+    - text: |
+        Coördinator (RC) van de richting Elektrotechniek (ET) is Dhr. A. Rampadarath,
+        en de vice RC is Mevr. A. Raghoebarsing
+        De contactgegevens zijn als volgt:
+        E-mail: anand.rampadarath@uvs.edu voor Dhr. A. Rampadarath en 
+        E-mail: amrita.raghoebarsing@uvs.edu voor Mevr. A. Raghoebarsing."
+
+
+  utter_ask_accreditation_et:
+   - text: " De opleiding Bachelor Elektrotechniek is geaccrediteerd op 24 juni 2021 m.a.w. het 
+     Nationaal Orgaan voor de Accreditatie, NOVA, heeft verklaard dat de opleiding 
+     voldoet aan de standaarden van de Accreditatiekader Bestaande Opleidingen Wetenschappelijk Onderwijs."
+
+  utter_ask_ftew_tasks:
+    - text: "Anno oktober 2003 heeft de FTeW tot taak de verzorging van een Bacheloropleiding met een 
+    studieduur van drie jaar en Masteropleidingen met een maximale studieduur van twee jaar. 
+    Men verkrijgt dan de titel van Bachelor of Science (BSc.) respectievelijk Master of Science (MSc.)."
+
+  utter_ask_ftew_origin:
+    - text: " De Faculteit der Technologische Wetenschappen (FTeW) is een samenvoeging van de 
+    Faculteit der Natuurtechnische Wetenschappen en de Faculteit der Technische Wetenschappen, die 
+    waren opgericht in 1976 respectievelijk 1977. Bij staatsbesluit van 10 juli 1986 
+    (Staatsblad 1986, no. 39), welke terugwerkt tot 17 oktober 1983, kwam de faculteit tot stand."
+
+  utter_ask_ftew_study_directions:
+    - text: |
+        De FTeW heeft zeven studierichtingen:
+        1. Elektrotechniek (Et)
+        2. Agrarische Produktie (AP)
+        3. Geowetenschappen (Gw)
+        4. Infrastructuur (Is)
+        5. Milieuwetenschappen (Mw)
+        6. Werktuigbouwkunde (Wb)
+        7. Sustainable Management of Natural Resources (SMNR).
+        
+
+  utter_faculty_board_composition:
+    - text: "Het faculteitsbestuur bestaat uit: de decaan, de secretaris, alle richtingscoördinatoren,
+     één vertegenwoordiger van het technisch- en administratief personeel en één vertegenwoordiger van 
+    de studenten. Het bestuur zorgt voor de uitvoering van het beleid zoals is vastgesteld door de 
+    faculteitsvergadering; zij komt minstens twee maal per maand bijeen. De leden van het 
+    faculteitsbestuur worden voor een periode van twee jaren gekozen door de 
+    daartoe gerechtigde leden van de faculteitsvergadering."
+
+
+
+  utter_examination_committee_description:
+    - text: "De examencommissie is een door het faculteitsbestuur ingestelde commissie, 
+    die verantwoordelijk is voor het waarborgen van de kwaliteit van toetsen, de controle op 
+    en het bekrachtigen van examens, de organisatie en de coördinatie van de tentamens van 
+    de faculteit dan wel van een door de faculteit aangeboden opleiding of groep van opleidingen. "
+
+  utter_examination_committee_members:
+    - text: |
+        De examencommissie van de faculteit bestaat uit een voorzitter,
+        en secretaris, vertegenwoordigers van de richtingen en drie administratieve medewerkers nl:
+        - Mw. L. Joyette, MSc. (voorzitter)
+        - Mw. W. Markiet, BSc. (secretaris Bacheloropleidingen)
+        - Mw. R. Zeegelaar, MSc. (vertegenwoordiger AP, GW en MW)  
+        - Dhr. H. Sariman, BSc. (vertegenwoordiger Et, Is en Wb) 
+        - Mw. A. Namdar, MSc. (vertegenwoordiger SMNR) 
+        - Mw. G. Noekri (administratieve medewerker) 
+        - Mw. A. Carilho (administratieve medewerker) 
+        - Mw. L. Wielzen (administratieve medewerker)
+ 
+
+  utter_examination_committee_contact:
+    - text: "Bereiken van de examencommisie: De examencommissie-administratie is te bereiken via de 
+    centrale telefoonlijn, 465558 op toestel # 2315 en op 8873951, 
+    en per email via examencie-ftew@uvs.edu. "
+
+  utter_Opleiding_committee_description:
+    - text: "De opleidingscommissie is een door het bestuur van de universiteit ingestelde commissie, die 
+    voornamelijk belast is met de bewaking van de kwaliteit van het wetenschappelijk onderwijs 
+    en onderzoek in de ruimste zin des woords binnen de faculteit. 
+    Dhr. C. Ally, MASc. (vertegenwoordiger Et)."
+
+  utter_student_committee_description:
+    - text: |
+        De studentencommissie wordt door de studenten gekozen en heeft de volgende taken en bevoegdheden:
+        1. het onderhouden van contacten met studenten vande FTeW
+        2. het evalueren van de studentenproblematiek en het doen van voorstellen aan de decaan en/of het universiteitsbestuur 
+        3. het onderhouden van contacten met organen binnen de universiteit die zich bezighouden met de studentenproblematiek 
+        4. het onderhouden van regelmatige contacten met andere studentencommissies i.v.m. uitwisseling van informatie en afstemming van werkzaamheden gericht op het bewerkstelligen van uniforme regelingen.
+
+  utter_student_committee_members:
+    - text: "De studentencommissie bestaat uit huidige studenten van de FteW. Verkiezing van de 
+    studentencommissie vindt jaarlijks omstreeks november plaats. 
+    Voorts zijn er vertegenwoordigers van de B1-fase en de B2-fase per studierichting. "
+
+
+  utter_faculty_office_description:
+    - text: |
+        Het faculteitsbureau heeft de volgende taken: 
+        1. het bijstaan van het dagelijks bestuur in haar werkzaamheden 
+        2. het bijstaan van de rc's in hun werkzaamheden 
+        3. het bijstaan van de examencommissie en alle overige bestuurs- en faculteitscommissies in hun werkzaamheden 
+        4. contact onderhouden met alle geledingen van de faculteit 
+        5. het verstrekken van informatie aan de studentengemeenschap 
+        6. het bijhouden van de studentenadministratie
+        
+
+  utter_ask_faculty_office_location:
+    - text: "Het faculteitsbureau is de administratieve arm van de 
+    faculteit en is deels gehuisvest in gebouw 16 en deels in gebouw 17
+    Het faculteitsbureau is te bereiken via de centrale telefoonlijn, 465558 op toestel # 2298/2299 (gebouw 17) en 
+    toestel # 2356/2357 (gebouw 16). Het decanaat is te bereiken op toestel #2317. 
+    De administratie van de studierichting is gevestigd in gebouw 16, vleugel 2."
+
+  utter_student_dean_description:
+    - text: "De studentendecaan is aangesteld als vertrouwenspersoon voor studenten en vervult voor studenten een bemiddelingsfunctie. Zij biedt een luisterend oor en geeft op jouw verzoek informatie, advies, en een second opinion over onderwerpen die samenhangen met jouw studie (of studiekeuze) of jouw persoonlijke omstandigheden. Je kunt een afspraak maken voor informatie, begeleiding of advies."
+
+  utter_student_dean_description_contact:
+   - text: " De studentendecaan is mw. drs. D. Sumter. Zij is te bereiken via 465558 toestel # 2314. E-mail: denise.sumter@uvs.edu."
+
+  utter_quality_officer_description:
+    - text: "Er is een afdeling Kwaliteitszorg (KZ). De doelstelling van KZ is het duurzaam versterken van de kwaliteit van het onderwijs, onderzoek en de processen van de universiteit, en het ondersteunen van het bestuur, de faculteiten, de opleidingen en de docenten daarbij."
+
+  utter_et_description:
+    - text: |
+        Elektrotechniek is een bacheloropleiding op de adeKUS. 
+        Elektrotechniek heeft betrekking op de ontwikkeling en het gebruik van elektrische- 
+        en elektronische technologie ten voordele van de maatschappij. 
+        Het behelst het ontwerp, de ontwikkeling en de toepassing van apparaten, 
+        netwerken en systemen, die worden gebruikt bij: 
+        - de opwekking, transmissie en distributie van elektrische energie 
+        - het sturen en regelen van machines 
+        - de telecommunicatie diensten 
+        - computers en informatieverwerking gebaseerd op computersystemen. 
+        Het is een zeer breed gebied, dat alle aspecten van de moderne maatschappij, in het bijzonder in 
+        deze tijd van informatieverwerking, telecommunicatie, elektriciteitsvoorziening 
+        en automatisering, beïnvloedt.  
+
+  utter_et_goals:
+    - text: |
+        De bacheloropleiding Elektrotechniek beoogt zes doelen: 
+        1. Het bieden van een programma: 
+         i.) dat volledig de praktische, analytische en mathematische aanpak van elektrotechnische problemen omhelst. 
+         ii.) dat de student voorziet van wetenschappelijke kennis op het gebied van, wiskunde en ingenieurswetenschappen, die fundamenteel is voor elektrotechniek. 
+         iii.) waarbij het curriculum kwalificeert voor een vervolgstudie, en tevens voorbereidt op het werkveld. 
+        2. Het zorgen voor een omgeving waarin de student de ontwikkelde vaardigheden en opgedane kennis kan toe passen om ingenieursproblemen te identificeren, formuleren en oplossen. 
+        3. Het stimuleren van de nieuwsgierigheid en creativiteit bij het verkennen van innovatieve oplossingen van elektrotechnische problemen. 
+        4. Het vermogen en inzicht van de student ontwikkelen, zodat hij/zij in staat is zowel binnen als buiten het vakgebied te functioneren. 
+        5. Het bijbrengen van de bewustwording van de student in sociale, economische en milieuvraagstukken. 
+        6. Het voorzien in mogelijkheden voor het ontwikkelen van zelfexpressie, discussie, teamwerk en het vermogen om te doen aan continue zelfeducatie
+        
+
+  utter_et_duration_load:
+    - text: "De Bachelorstudie is een onafgebroken studie en bestaat uit drie studiejaren. De nominale studieduur bedraagt drie jaren en de maximale studieduur bedraagt vijf jaren. Het eerste jaar heeft het karakter van oriëntatie, selectie en verwijzing. Men mag er maximaal twee jaren over doen. De totale studielast gedurende drie jaar bedraagt 180 studiepunten voor het curriculum vanaf 2015. Voor één studiepunt geldt een studielast van 28 uren."
+
+  utter_et_admission_requirements:
+    - text: |
+        Om toegelaten te worden tot de studie Elektrotechniek, 
+        moet je over één van de volgende documenten beschikken: 
+        - een VWO-diploma S-pakket met wiskunde I, natuurkunde en scheikunde met minimaal een 6
+        of 
+        - een certificaat schakeljaar met FTeW-pakket
+        of 
+        - een verklaring dat je hebt voldaan aan de Colloquium Doctum-toets
+
+  utter_energietechniek_description:
+    - text: "De oriëntatie Energietechniek houdt zich voornamelijk bezig met de transmissie, de distributie en het gebruik van elektrische energie (conventioneel als alternatieve energiebronnen) voor allerlei soort doeleinden (elektrische aandrijvingen, elektrische vermogencontrole, verlichting, koeling etc.). Van de hedendaagse energietechniek-student wordt verder verwacht dat hij/zij de beginselen van Informatie en Communicatie Technologie (ICT), gepaard gaande met de eerder genoemde processen, begrijpt en kan toepassen op relatief eenvoudige systemen
+    . Wilt u meer informatie hebben over de vakken van de oriëntatie Energietechniek "
+
+  utter_informatietechniek_description:
+    - text: ": De oriëntatie Informatietechniek houdt zich voornamelijk bezig met telecommunicatie (het communiceren over afstand, gebruikmakende van de telefoon- en radioverbindingen), datacommunicatie (het overdragen van data tussen computersystemen) en bestuurlijke automatisering (het genereren van management informatie; het automatiseren van administratieve diensten), drie gebieden, die een snelle ontwikkeling doormaken"
+
+  utter_phases_division:
+    - text: |
+        De studie bestaat uit twee fasen: 
+        -> de B1 - fase (jaar 1 verdeeld in 2 semesters) 
+        -> de B2 - fase (jaar 2 en 3 met een totaal van 4 semesters)
+
+  utter_semesters_division:
+    - text: " De richting Elektrotechniek bevat uit zes semesters.De semesters 1 t/m 2 bevatten verplichte curriculumonderdelen die gemeenschappelijk zijn voor beide oriëntaties. Je verwerft basiskennis en vaardigheden die noodzakelijk zijn voor de rest van de studie.
+     De semester 3 en 4 zijn nu ook gemeenschappelijk en pas in het vijfde semester maakt de student naast enkele verplichte curriculumonderdelen, een keuze uit drie vakkenpakketten: Electriciteitsvoorziening, Telecommunicatie en Informatica. De studie wordt afgesloten met een afstudeeropdracht (4 maanden), welke afgerond dient te worden in het zesde semester.
+     Elk collegejaar is verdeeld in twee semesters: Het oneven semester en wel van oktober t/m februari (semesters 1, 3 en 5) en het even semester en wel van april t/m juli (semesters 2, 4 en 6)."
+
+
+  utter_cum_laude_criteria:
+    - text: "Voor het Bachelorexamen wordt het predikaat cum laude toegekend, wanneer voor de onderwijseenheden het gemiddelde cijfer van,8 of hoger is behaald, en wanneer de nominaal toegestane studieduur niet is over-schreden. ."
+
+  utter_education_formats:
+    - text: "
+      In de elektrotechniek worden activerende werkvormen gebruikt, 
+      wat betekent dat verschillende methoden worden gebruikt om kennis 
+      en vaardigheden over te dragen. Deze omvatten hoorcolleges voor 
+      theoretische kennisoverdracht, instructie voor oefeningen en praktisch leren, 
+      werkcolleges voor groepsdiscussies en practica, zowel als zelfstandig onderdeel 
+      van het studieprogramma als onderdeel van vakken waarbij resultaten meetellen voor het eindcijfer"
+
+  utter_assessment_formats:
+    - text: |
+        1. Tentamen: Mondelinge- of schriftelijke toetsing van een vak. 
+        Een tentamen kan gesplitst worden in meer deeltentamens. 
+        2. Praktijkopdracht of project: Individueel of in een groep wordt gewerkt aan een praktijkopdracht 
+        of project welke aansluit op de kennis (en ervaring) verworven tijdens de colleges
+
+  utter_exam_rules:
+    - text: |
+        Hier zijn de regels omtrend tentamens binnen Elektrotechniek:
+        1. Kom minimaal 5 minuten voor het tentamen aan.
+        2. Als je te laat bent, mag je tot 30 minuten na de start binnenkomen.
+        3. Blijf minstens 60 minuten zitten, tenzij anders beslist.
+        4. Volg aanwijzingen van de surveillant en examinator.
+        5. Houd tassen en studiemateriaal buiten bereik.
+        6. Gebruik geen mobiele telefoons tijdens het tentamen.
+        7. Legitimeer jezelf met je studentenkaart.
+        8. Controleer je aanwezigheid op de presentielijst.
+        9. Leen geen studiemateriaal van medestudenten.
+        10. Niet-participerende studenten moeten het gebied verlaten.
+        
+
+  utter_Give_KeuzeVakFormulier_pdf:
+        - text: "Hier is de Keuzevak formulier in pdf formaat."
+          custom:
+            payload: pdf_attachment
+            title: "Keuzevak formulier"
+            url: "https://drive.google.com/file/d/1WXGqWA-N6qARRHFpaXYb9-43pKl1j6MX/view?usp=sharing"
+
+  utter_Give_TemplateAfstudeerProject_pdf:
+    - text: "Hier zijn de pdf files voor het afstudeer project."
+      custom:
+        payload: multiple_pdf_attachments
+        pdfs:
+          - title: "Final-Template verslag"
+            url: "https://drive.google.com/file/d/1_7DdiI-WLQRb9MbHC14YKlZ0utlT7hQ2/view?usp=sharing"
+          - title: "Final-Template afstudeer verslag"
+            url: "https://drive.google.com/file/d/1oGhpTeXUgf9dCarfo_tbmA3R1dzkNnyc/view?usp=sharing"
+          - title: "Final-nader toelichting verslag schrijven"
+            url: "https://drive.google.com/file/d/1xu6wx3LTO7Hc1NyxXHwVZ1tjUfQVdXeb/view?usp=sharing"
+
+  utter_RC of others courses in within Ftew:
+    - text: |
+        - Mw. Prof. L. Orie, PhD. (RC. Agrarische Produktie) 
+        - Dhr. ir. R. Cameron (RC. Geowetenschappen) 
+        - Dhr. A. Rampadarath, M.Sc. (RC. Elektrotechniek) 
+        - Dhr. S. Kishoen Missier, MSc. (RC. Infrastructuur) 
+        - Dhr. Prof. M. Huisden , PhD (RC. Milieuwetenschappen) 
+        - Dhr. M. Karia, MSc. (wnd. RC. Werktuigbouwkunde) 
+        - Mw. U. Satnarain, MSc. (RC. Sustainable Management of Natural Resources)
+
+  utter_Ask_who_is_secrataris:
+    - text: " De scretaris van ET is mevr. Inez Cameron. Mail: inez.cameron-tilborg@uvs.edu. 
+    U kunt bij haar terecht voor het ophalen van tentamen briefjes, reserveren van lokalen voor het volgen van lessen."
+
+  utter_Ask_TentamenBriefjes:
+    - text: " Voor het ophalen van uw tentamen briefjes kunnen studenten van ET terecht bij de secretaris van ET, mevr. Inez Cameron.
+    Heeft u hulp nodig om de administratie lokaal waar mevr. Inez Cameron zit te lokaliseren?"
+
+  utter_Ask_inschrijfverklaring:
+    - text: " Instructies voor het ophalen van uw inschrijfverklaring:
+      Tussen 08:00 uur en 12:00 uur kunt u, op vertoon van uw studentenpas of inschrijvingsbewijs, SRD 50,- betalen bij de Kassa op de 1e etage van het BAK-gebouw. Op de achterkant van het ontvangstbewijs schrijft u uw volledige voornaam, studierichting, geboortedatum en -plaats. Vervolgens deponeert u het ontvangstbewijs in de rode map Aanvraag Inschrijfverklaringen op de balie van Studentenzaken. De aangevraagde verklaring kunt u de volgende dag na 10:00 uur ophalen bij de balie van Bureau Studentenzaken"
+
+  utter_Ask about directions:
+    - text: |
+        Zeker! Ik kan je helpen met de routebeschrijving naar specifieke lokalen waar Elektrotechniek studenten vaak les hebben. 
+        Ik geef de routebeschrijving van:
+        1. Lokaal 23
+        2. Info Lab
+        3. Telecom Lab (Telecommunicatie Lab)
+        4. CEL (Computer Educatie Lab)
+        5. Administratie Gebouw 16
+        6. Energie Lab 
+
+  utter_Ask Time of Knowledge:
+    - text: "Mijn kennis is up-to-date tot 17 januari 2024"
+
+
+  utter_ask about semester subjects:
+    - text: |
+        Hierbij ontvangt u van mij een pdf file met alle vakken per semester en hun:
+        1. Aantal Studiepunten
+        2. Onderwijsmethode
+        3. Contacttijd
+        4. Zelfstudie
+        5. Wijze van toetsen"
+      custom:
+        payload: pdf_attachment
+        title: "Curriculum per collegejaar 2023-2024 "
+        url: "https://drive.google.com/file/d/1cVzWY7zmsT2zWqHHKMop4-THxTpfj-GK/view?usp=sharing"
+
+  utter_Small Discription of Energy Subjects:
+    - text: | 
+        Hier is een pdf file met een kleine omschrijving van elk vak binnen 
+        de oriëntatie  Elektriciteitsvoorziening. Wilt u meer informatie over de docenten binnen deze richting?
+      custom:
+        payload: pdf_attachment
+        title: "Oriëntatie Elektriciteitsvoorziening"
+        url: "https://drive.google.com/file/d/1z3_3hBFGDfE31mtV9DsLHOlWAMo9bVWE/view?usp=sharing"
+
+  utter_Small Discription of Informatica Subjects:
+    - text: |
+        Hier is een pdf file met een kleine omschrijving van elk vak binnen 
+        de oriëntatie Informatica. Wilt u meer informatie over de docenten binnen deze richting?
+      custom:
+        payload: pdf_attachment
+        title: "Oriëntatie Informatica"
+        url: "https://drive.google.com/file/d/1Dl3fjOfQtj6V7htoOirFpPf5ga-lVvfU/view?usp=sharing"
+
+  utter_Ask teacher's name of Informatica Subjects:
+    - text: |
+        De namen van de docenten binnen de richting informatica:
+        1. S.Bhaggan - Objectgeoriënteerd programmeren II
+        2. A.Kisoensingh - Relationale Databanken
+        3. W.Soetosenojo - Computerorganisatie || Project Ontwerp IIC
+        4. V.Bandhoesingh - Datacommunicatie netwerken
+        5. T.Cheung - Besturingssytemen
+        6. C.Kartopawiro - Elektrotechnische meettechniek II
+        7. R.Antonius - Projecteconomie
+        8. V.Singh - Signaalverwerking in de telecommunicatie 
+
+  utter_Ask teacher's name of Energy Subjects:
+    - text: |
+        De namen van de docenten binnen de richting elektriciteitsvoorzienning:
+        1. V.Sewdien - Energietransformaties in elektrische centrales
+        2. A.Kalpoe - Energieoverdracht
+        3. M.Antonius - Elektrische machines II
+        4. L.Kalapnat - Elektrische installaties
+        5. C.Ally - Vermogenselektronica
+        6. V.Sookha - Project ontwerp IIA
+        7. P.Tedjoe - Centrales en onderstations
+        8. C.Kartopawiro - Elektrotechnische meettechniek II
+        9. R.Antonius - Projecteconomie
+
+  utter_Questions not for bot:
+      - text: "Sorry, ik ben geprogrammeerd om je te helpen met specifieke vragen over Elektrotechniek. Hierover bevat ik geen informatie, kan ik je ergens anders mee helpen?"
+
+  utter_Ask about creation:
+    - text: "Ik ben gemaakt met behulp van Python 3.8 en het opensource chatbot-framework Rasa versie 3.1. Rasa is een krachtig framework dat wordt gebruikt voor het bouwen van chatbots. 
+    Als u andere vragen heeft stelt u ze maar?"
+
+  utter_Ask about Contact info:
+    - text: |
+        Ja, ik bevat contact informatie van de volgende mensen\instanties: 
+        1. Coördinator (RC)  en de waarnemend RC van de richting elektrotechniek
+        2. De examencommissie
+        3. Het faculteitsbureau
+        4. De studentendecaan
+        5. De secretaris van elektrotechniek. 
+          Van wie wilt u de contact gegevens:
+      buttons:
+        - title: "Van de RC en waarnemend RC"
+          payload: "/link_rc"
+        - title: "De examencommissie"
+          payload: "/link_examencommissie"
+        - title: "Het faculteitsbureau"
+          payload: "/link_Het_faculteitsbureau"
+        - title: "De studentendecaan"
+          payload: "/link_De_studentendecaan"
+        - title: "De secretaris van elektrotechniek "
+          payload: "/link_secretaris_et"
+
+  utter_Button Direction for EnergyLab:
+    - text: |
+        Vanuit welk van de onderstaande locaties wilt u routebeschrijving naar het energie lab:
+      buttons:
+        - title: "De ingang van AdeKUS"
+          payload: "/ingang_energie_lab33"
+        - title: "Gebouw 17"
+          payload: "/geb17_energie_lab_3338880"
+        - title: "Gebouw 19"
+          payload: "/geb19_energie_lab_29292929"
+
+
+  utter_Button Direction for InfoLab:
+    - text: |
+        Vanuit welk van de onderstaande locaties wilt u routebeschrijving naar het Informatie Lab:
+      buttons:
+        - title: "De ingang van AdeKUS"
+          payload: "/ingang_Informatie_lab12"
+        - title: "Gebouw 17"
+          payload: "/geb17_Informatie_lab1345"
+        - title: "Gebouw 19"
+          payload: "/geb19_Informatie_lab00789"
+
+  utter_Button Direction for Cel:
+    - text: |
+        Vanuit welk van de onderstaande locaties wilt u routebeschrijving naar CEL:
+      buttons:
+        - title: "De ingang van AdeKUS"
+          payload: "/ingang_Computer_educatief_Lab"
+        - title: "Gebouw 17"
+          payload: "/geb17_Computer_educatief_Lab_6969696"
+        - title: "Gebouw 19"
+          payload: "/geb19_Computer_educatief_Lab_01010"
+
+  utter_Button Direction for Telecom:
+    - text: |
+        Vanuit welk van de onderstaande locaties wilt u routebeschrijving naar het Telecom Lab:
+      buttons:
+        - title: "De ingang van AdeKUS"
+          payload: "/ingang_Telecom_Lab_100999"
+        - title: "Gebouw 17"
+          payload: "/geb17_Telecom_Lab_00066000700"
+        - title: "Gebouw 19"
+          payload: "/geb19__Telecom_Lab_444000777"
+
+
+  utter_Button Direction for Admin:
+    - text: |
+        Vanuit welk van de onderstaande locaties wilt u routebeschrijving naar de administratie:
+      buttons:
+        - title: "De ingang van AdeKUS"
+          payload: "/ingang_naar_administratie"
+        - title: "Gebouw 17"
+          payload: "/geb17_naar_administratie_565656565"
+        - title: "Gebouw 19"
+          payload: "/geb19_naar_administratie_464646469898"
+
+
+  utter_Button Direction for Lok23:
+    - text: |
+        Vanuit welk van de onderstaande locaties wilt u routebeschrijving naar Lokaal 23:
+      buttons:
+        - title: "De ingang van AdeKUS"
+          payload: "/ingang_tot_lokaal_23_8989"
+        - title: "Gebouw 17"
+          payload: "/geb17_tot_lokaal_23_575757574546"
+        - title: "Gebouw 19"
+          payload: "/geb19_tot_lokaal_23_3834949495670"
+
+  utter_Button Direction for Geb16:
+    - text: |
+        Vanuit welk van de onderstaande locaties wilt u routebeschrijving naar Gebouw 16(FteW):
+      buttons:
+        - title: "De ingang van AdeKUS"
+          payload: "/find_geb16_from_entrance"
+        - title: "Gebouw 17"
+          payload: "/find_geb16_from_building17-565656"
+        - title: "Gebouw 19"
+          payload: "/find_geb16_van_grbouw19-7878"
+
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

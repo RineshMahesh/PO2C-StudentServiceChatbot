@@ -1,0 +1,33 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBsThbISAzuaS0KLW2NhYAkWIdiQ==": "utter_GivePicture",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBsThbISAzuaS0KLWWgEmlJSWpRfHumWWpMA34TYsFABfFOu8=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBsThbwTEpv7REwTElNbu2NhYA59cePQ==": "utter_ask_about_adek",
+    "eJyFjEEOgCAMBL/SB/gCbrzDmKZqDwQthhYvhL+L0Tu3nWRm59omqFfmG2mzkMRB/QYKnezghyOosXS3KOfuBOloDrxG8GsqBn7n2AZnxYwzkkakt0F6m+Hn8gAWIz2d": "action_listen",
+    "eJyljjEKAzEMBL+iB+QF7vyOEIRykUH4LB+ynMb47/GR9Fek24XZYe9j3mAcxm+kzaVqgPENqFQ4wK/s0px1sb2xLUZ0VQ8QW4b4rN0hvjjPC1l3Z0NqGencIJ2bP50XB0VTtYKUkliZ8/EBsOxauQ==": "utter_adek_faculties",
+    "eJyljkEKQjEMRK+SA3iC7noOkRC/KYT+ppKmbsq/u/3ovoK7GZh5M9dxXGA8jV9Im0vVAOMjUKlwgK/ZpTnrzPbGNjOi03qA2DLEe+0O8cH5WMC6OxtSy0hnB+ns/MlcHBRN1QpSSmLlx39zFRNtfXfhtkTe3kloerA=": "action_listen",
+    "eJyljkEKAjEMRa+SA3iC7noOkRDHFEKnrSSpmzJ3t4PuR5ldPvz/8q5ju8B4Kr+QFpdWA4zPgZUKB/iGVcy5zm431tmROqMHiJYh3lt3iA/O2wGsu7MiWUbaN0j75iTzQFBqalqQUhItP/rNr5ho6asL20nkf3q3Nwbyl8w=": "action_handle_payload",
+    "eJytjksKwzAMRK+iA/QE3vkcpQg1lqnxL9hyoZjcvQ7J3oV0pwczT3Pv2w36WviNtIjLSUE/DkwUWcEJwVXhNLKtchkZlwaKAl096GduAtqw3yayJsIFqXqkvYO0dy46JwNdsrlEJGtdiT/uG1/R0tKCOK4Xlf+cd8KLkgmMK31CJjN1Pr4hKbgO": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1tSQ+PT8/JTe/KC8zL722NhYAU2sghw==": "utter_greet_goodmorning",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1tSQ+PT8/JTe/KC8zL72WgHmlJSWpRfGY2ogxORYA5uxDnQ==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBL79EwSOxoKBSoTyzJEPBMa+4PLWotjYWAMjJIS0=": "utter_not_happy_with_answer",
+    "eJyNjUEKgCAQRa8yB+gE7tq16gIRg8SAQo2iYxLi3VNqX7v/4L//l1IHKD7QiXoT61hBeQKyPkjBC7uNQty6KVJoHcsNRcHsBCbt/QXZioGRY6ZQPzaTCAVkJ2i6il1F/ah/H9YbwI5GrA==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1tSQ+PT8/JTGtJLUoLz8/r7Y2FgCU9iFZ": "utter_greet_goodafternoon",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1tSQ+PT8/JTGtJLUoLz8/r5aAiaUlQIXx2DQSZ3osAIi1RhM=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohuKQ0BcgoLkhMTlUILE0tBqkurq2NBQD2+yJM": "utter_studentspace",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohuKQ0BcgoLkhMTlUILE0tBqkuriVgaGlJSWpRfDGSXuJNjgUAIvdFIQ==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohPT8/JakytbY2FgAh+hxX": "utter_goodbye",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohPT8/JakytZaAKaUlJalF8TDFuE2JBQCMqTcN": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBsThbwTEpv7REwTElNbuWgGGlJSWpRfGJxdnxiSA98YkgPRSaScCBKal5lbW1sQCQC1cK": "utter_deny",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBsThbwTEpv7REwTElNbuWgGGlJSWpRfGJxdnxiSA98YkgPRSaScCBKal5lcQ5C6wSh/5YAGG6b04=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1tSQ+PT8/JS8zPaOktjYWABKdH6c=": "utter_greet_goodnight",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1tSQ+PT8/JS8zPaOkloBppSUlqUXx6JoImxoLAEq/QP0=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBsThbwSc/ORGkSME/TcExJTW7tjYWAKQQIFA=": "utter_adek_locatie",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBsThbwSc/ORGkSME/TcExJTW7loCRpSUlqUXxiUCV8TlgranEmhsLAHw/QOs=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBJbMoNbkkv8g/zTElNbu2NhYA7vAe1A==": "utter_DirectorOfAdek",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBJbMoNbkkv8g/zTElNbuWgGGlJSWpRfFoegiaGQsAShA+hA==": "action_listen"
+  }
+}
